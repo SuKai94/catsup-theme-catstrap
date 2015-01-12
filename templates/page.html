@@ -1,28 +1,28 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<div class="col-md-8">
-    <ol id="posts">
+<div class="box">
+    <header>文章列表</header>
+    <ul id="posts">
         {% for post in pagination.items %}
         <li>
             <span class="date">{{ post.datetime.strftime("%b %d, %Y") }}</span> <a href="{{ url_for(post) }}">{{ post.title }}</a>
         </li>
         {% endfor %}
-    </ol>
+    </ul>
 
-    {% if pagination.has_prev %}
-<a id="prev" href="{{ pagination.prev_permalink }}" class="v_nav" >
-    <span class="icon">Prev</span>
-</a>
-{% endif %}
+    <ul class="pager">
+        {% if pagination.has_prev %}
+        <li class="previous">
+            <a href="{{ pagination.prev_permalink }}">&lt;&lt; 上一页</a>
+        </li>
+        {% endif %}
 
-{% if pagination.has_next %}
-<a id="next" href="{{ pagination.next_permalink }}" class="v_nav" >
-    <span class="icon">Next</span>
-</a>
-{% endif %}
+        {% if pagination.has_next %}
+        <li class="next">
+            <a href="{{ pagination.next_permalink }}">下一页 &gt;&gt;</a>
+        </li>
+        {% endif %}
+    </ul>
 </div>
-
-
-
 {% endblock %}

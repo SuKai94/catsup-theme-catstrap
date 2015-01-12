@@ -6,7 +6,7 @@
     {% block head %}{% endblock %}
     <title>{% block title %}{{ site.name }}{% endblock %}</title>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ static_url("style.css") }}" type="text/css" />
+    <link rel="stylesheet" href="{{ static_url("css/style.css") }}" type="text/css" />
     <link rel="alternate" type="application/rss+xml" href="{{ url_for('feed') }}" title="{{ site.name }}" />
     <link rel="canonical" href="{{ permalink }}"/>
     {{ analytics() }}
@@ -36,12 +36,29 @@
 
 <div id="main">
     <div class="container">
+        <div class="col-md-4">
+            <div class="box">
+                <header>
+                程序猿苏苏
+                <a href="http://weibo.com/2902370675/profile?topnav=1&wvr=6"><img src="./static/imgs/weibo.png"></a>
+                <a href="https://github.com/su-kaiyao"><img src="./static/imgs/github.jpg"></a>
+                </header>
+                <p><center>有话直说，随心而动</center></p>
+
+                <!-- <ul>
+                    <li>Github:</li>
+                </ul> -->
+            </div>
+        </div>
+        <div class="col-md-8">
         {% block content %}
         {% endblock %}
+        </div>
+
         <div class="col-md-12" id="footer">
             Powered by <a href="http://github.com/whtsky/catsup">Catsup</a>
-            <span>&bull;</span>
-            Theme <a href="https://github.com/whtsky/catsup-theme-clean">Clean</a> by <a href="http://whouz.com">whtsky</a>
+            &
+            Theme <a href="https://github.com/su-kaiyao/catsup-theme-catstrap">catstrap</a> by <a href="http://kaiyao.net.cn">su-kaiyao</a>
         </div>
     </div>
 </div>
