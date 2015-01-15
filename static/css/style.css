@@ -1,9 +1,13 @@
 body {
+	font-family: "Inconsolata","Menlo",monospace;
 	background-color:#EEE;
 }
 
 #main {
+	padding-top: 50px;
+	padding-bottom: 50px;
 	margin-top:25px;
+	font: 400 18px/1.62 "Georgia","Xin Gothic","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei","SimSun",sans-serif;
 }
 
 .box {
@@ -18,6 +22,7 @@ body {
 }
 
 .box header {
+	font-family: "Inconsolata","Menlo",monospace;
 	margin-bottom:20px;
 	padding-bottom:10px;
 	border-bottom:1px solid #DDD;
@@ -27,6 +32,16 @@ body {
 
 .box header img{
 	width: 18px;
+}
+
+.box ol{
+	margin: 0px 0px 24px 6px;
+	padding-left: 16px;
+}
+
+.box li{
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #posts {
@@ -42,7 +57,7 @@ body {
 	padding-left:10px;
 	color: #111;
 	font-weight:bold;
-	font-size:17px;
+	font-size:18px;
 }
 
 #posts li .date{
@@ -61,4 +76,72 @@ body {
 #footer a{
 	color:gray;
 	font-weight:bold;
+}
+
+.post h1#title{
+	text-align:center;
+	font-size: 1.8em;
+	margin: 0.67em 0px;
+	color: #222223;
+	font-weight:bold;
+}
+
+.post>.date{
+	text-align:center;
+	font-style: italic;
+	color: #808080;
+}
+
+.post article{
+	padding-top:30px;
+	border-top:1px solid rgba(0,0,0,0.1);
+	display: block;
+}
+
+.post .tags{
+	color:gray;
+	font-style:italic;
+	font-size:0.9em;
+}
+
+.post .tags a{
+	color:gray;
+}
+
+.post p{
+	margin-top: 0px;
+	margin-bottom: 1.64em;
+}
+
+.post h3 {
+    font-size: 1.17em;
+    font-weight:bold;
+    margin: 1em 0px;
+    color: #222223;
+}
+
+.post ul {
+    list-style-type: square;
+}
+
+.post code{
+    color: #808080;
+    font-size: 0.96em;
+    background-color: #F9F9F7;
+    padding: 1px 2px;
+    border: 1px solid #DADADA;
+    border-radius: 3px;
+    font-family: "Microsoft YaHei",monospace;
+}
+
+.post pre{
+	padding: 7px;
+	border: 1px solid #DADADA;
+	border-radius: 4px;
+	overflow: auto;
+	line-height: 1.5;
+	font-size: 0.96em;
+	font-family: "Inconsolata","Menlo",monospace;
+	color: #4C4C4C;
+	background-color: #F9F9F7;
 }
