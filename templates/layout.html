@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ static_url("css/style.css") }}" type="text/css" />
     <link rel="stylesheet" href="{{ static_url("css/pygments_style.css") }}" type="text/css" />
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <link rel="alternate" type="application/rss+xml" href="{{ url_for('feed') }}" title="{{ site.name }}" />
     <link rel="canonical" href="{{ permalink }}"/>
     {{ analytics() }}
 </head>
 <body>
 
-<nav class="navbar-inverse">
+<nav class="navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -39,12 +43,12 @@
     <div class="container">
         <div class="col-md-2">
             <div class="box">
-                <header>
+                <header><center>
                 程序猿苏苏
                 <br>
-                <a href="http://weibo.com/2902370675/profile?topnav=1&wvr=6"><img src="./static/imgs/weibo.png"></a>
-                <a href="https://github.com/su-kaiyao"><img src="./static/imgs/github.jpg"></a>
-                </header>
+                <a href="http://weibo.com/2902370675/profile?topnav=1&wvr=6"><img src="/static/imgs/weibo.png"></a>
+                <a href="https://github.com/su-kaiyao"><img src="/static/imgs/github.jpg"></a>
+                </center></header>
                 <p><center>有话直说，随心而动</center></p>
 
                 <!-- <ul>
