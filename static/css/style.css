@@ -7,7 +7,11 @@ body {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	margin-top:25px;
-	font: 400 18px/1.62 "Georgia","Xin Gothic","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei","SimSun",sans-serif;
+	font: 400 17px/1.62 "Georgia","Xin Gothic","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft YaHei","SimSun",sans-serif;
+}
+
+.pager {
+	font-size: 12px;
 }
 
 .box {
@@ -22,7 +26,6 @@ body {
 }
 
 .box header {
-	font-family: "Inconsolata","Menlo",monospace;
 	margin-bottom:20px;
 	padding-bottom:10px;
 	border-bottom:1px solid #DDD;
@@ -63,6 +66,7 @@ body {
 #posts li .date{
 	font-style: italic;
 	color: #808080;
+	margin-right: 10px;
 }
 
 #footer {
