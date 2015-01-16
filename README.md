@@ -1,80 +1,36 @@
-SealScript
+Catstrap
 =============
 
-Overview
+概述
 --------------
 
-This is the default theme on [catsup](https://github.com/whtsky/catsup).
-It's designed by [Lyric Wai](https://github.com/lyricat) and ported by [whtsky](http://whouz.com).
+这是一款使用Bootstrap框架的，catsup博客主题，所以我取名为Catstrap
 
-Online demo: [messence](http://messense.me/)
+在线演示: [程序猿苏苏的博客](http://kaiyao.net.cn)
 
-Installation
+安装
 --------------
 
-Requires catsup 0.0.6+
+需要catsup版本0.1.0+
 
-The easy way using `catsup install` :
+### 方法一：使用`catsup install`安装本主题
+
 ```bash
 cd /path/to/your/blog
-catsup install git://github.com/whtsky/catsup-theme-sealscript.git
+catsup install git@github.com:su-kaiyao/catsup-theme-catstrap.git
 ```
 
-The hard way using git manually:
+### 方法二：使用`git`命令自动安装
+
 ```bash
 cd /path/to/your/blog
 mkdir themes
 cd themes
-git clone git://github.com/whtsky/catsup-theme-sealscript.git
-mv catsup-theme-sealscript sealscript
+git clone git@github.com:su-kaiyao/catsup-theme-catstrap.git
+mv catsup-theme-catstrap catstrap
 ```
 
-Configuration
+配置
 --------------
-Edit your configuration file, change `theme.name` to `sealscript`
 
-Customize
---------------
-You can customize your theme by changin `theme.vars`
-
-+ Change blog description
-```json
-{
-    "theme": {
-        "name": "sealscript",
-        "vars": {
-            "description": "description here",
-        }
-    }
-}
-```
-
-+ Add your GitHub link
-```json
-{
-    "theme": {
-        "name": "sealscript",
-        "vars": {
-            "github": "your github username",
-        }
-    }
-}
-```
-
-+ Add links in footer
-```json
-{
-    "theme": {
-        "name": "sealscript",
-        "vars": {
-            "links": [
-                {
-                    "name": "catsup",
-                    "url": "https://github.com/whtsky/catsup",
-                    "description": "Awesome!"
-                }
-            ]
-        }
-    }
-}
-```
+修改你catsup的配置文件`config.json`，`theme.name`修改为`catstrap`
