@@ -1,12 +1,12 @@
 body {
 	font-family: "Inconsolata","Menlo",monospace;
-	background-color:#EEE;
+	background-color: #EEE;
 }
 
 #main {
-	padding-top: 50px;
+	padding-top: 10px;
 	padding-bottom: 50px;
-	margin-top:25px;
+	margin-top: 10px;
 	font: 400 17px/1.62 "Inconsolata","Menlo",monospace;
 }
 
@@ -15,25 +15,45 @@ body {
 }
 
 .box {
-	background-color:white;
-	border-radius:3px;
-	margin-bottom:20px;
-	box-shadow:0px 0px 0px 1px #DDD;
-	overflow:hidden;
-	padding:14px;
-	border-bottom:2px solid #e2e2e9;
-	word-break:break-all;
+	background-color: white;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 0px 1px #DDD;
+	overflow: hidden;
+	padding: 14px;
+	border-bottom: 2px solid #e2e2e9;
+	word-break: break-all;
 }
 
 .box header {
-	margin-bottom:20px;
-	padding-bottom:10px;
-	border-bottom:1px solid #DDD;
-	font-weight:bold;
-	font-size:20px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #DDD;
+	font-weight: bold;
+	font-size: 20px;
 }
 
-.box header img{
+.box .headimg{
+	float: left;
+	margin-right: 10px;
+}
+
+.box .headimg img{
+	width: 80px;
+	height: 80px;
+}
+
+.box footer {
+	margin-top: 55px;
+	padding-top: 10px;
+	border-top:1px solid #DDD;
+}
+
+.box footer a{
+	color: #000;
+}
+
+.box footer img{
 	width: 18px;
 }
 
@@ -63,9 +83,22 @@ body {
 }
 
 #posts li a{
-	padding-left:10px;
+	padding-left: 10px;
 	color: #111;
-	font-size:18px;
+	font-size: 18px;
+}
+
+#posts li .articletag{
+	font-style: italic;
+	color: gray;
+	font-size: 12px;
+	margin-left: 120px;
+}
+
+#posts li .articletag a{
+	font-weight: bold;
+	font-size: 12px;
+	color: gray;
 }
 
 #posts li .date{
@@ -96,7 +129,7 @@ body {
 }
 
 .post>.date{
-	text-align:center;
+	text-align: center;
 	font-style: italic;
 	color: #808080;
 }
