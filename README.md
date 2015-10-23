@@ -4,9 +4,7 @@ Catstrap
 概述
 --------------
 
-这是一款使用Bootstrap框架的，catsup博客主题，所以我取名为Catstrap
-
-在线演示: [程序猿苏苏的博客](http://kaiyao.net.cn)
+这是一款使用Bootstrap框架制作的catsup博客主题，所以我取名为Catstrap
 
 安装
 --------------
